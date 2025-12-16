@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha's Singapore Guide 🇸🇬</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fce4ec; /* Soft Pink */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #d81b60;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: left;
+            border-bottom: 2px solid #fce4ec;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:active {
+            transform: scale(0.98);
+        }
+        /* Differentiate Food vs Shop cards */
+        .shop-card { border-left: 5px solid #d81b60; }
+        .food-card { border-left: 5px solid #43a047; }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .shop-name { color: #d81b60; }
+        .food-name { color: #2e7d32; }
+
+        .desc {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+        }
+        .shop-btn { background-color: #d81b60; color: white; }
+        .food-btn { background-color: #43a047; color: white; }
+        
+        /* Calculator Styles */
+        .calculator {
+            margin-top: 40px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px dashed #ccc;
+        }
+        .calc-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 70%;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .result-box {
+            margin-top: 15px;
+            font-size: 14px;
+            min-height: 20px;
+            text-align: left;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            display: none; /* Hidden by default */
+        }
+        .success-text { color: #2e7d32; font-weight: bold; font-size: 16px; margin-bottom: 5px; }
+        .fail-text { color: #c62828; font-weight: bold; }
+        .detail-text { font-size: 13px; color: #555; margin-top: 5px; }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>For Diksha ❤️</h1>
+        <div class="subtitle">Your Singapore Survival Guide</div>
+        <p>Your mission: Visit these spots, eat good food, and bring back the coolest stationery you can find!</p>
+
+        <h2>🛍️ The Stationery Hunt</h2>
+
+        <div class="card shop-card">
+            <span class="name shop-name">1. Kinokuniya (Main Store)</span>
+            <span class="desc">The "Mothership." Massive collection of Japanese pens & journals. (Ngee Ann City)</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kinokuniya+Ngee+Ann+City+Singapore" target="_blank" class="btn shop-btn">📍 Get Directions</a>
+        </div>
+
+        <div class="card shop-card">
+            <span class="name shop-name">2. Hands (Orchard Central)</span>
+            <span class="desc">Sticker paradise, travel gadgets, and unique stamps.</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tokyu+Hands+Orchard+Central+Singapore" target="_blank" class="btn shop-btn">📍 Get Directions</a>
+        </div>
+
+        <div class="card shop-card">
+            <span class="name shop-name">3. Cat Socrates (Joo Chiat)</span>
+            <span class="desc">Indie vibes. Look for Singapore-themed tapes & books.</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Cat+Socrates+Joo+Chiat+Singapore" target="_blank" class="btn shop-btn">📍 Get Directions</a>
+        </div>
+
+        <h2>🥗 Vegan Fuel Station</h2>
+
+        <div class="card food-card">
+            <span class="name food-name">1. Whole Earth</span>
+            <span class="desc"><b>Michelin Bib Gourmand.</b> The best Peranakan/Thai vegetarian food in SG. A must-try!</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Whole+Earth+Singapore" target="_blank" class="btn food-btn">🥦 Eat Here</a>
+        </div>
+
+        <div class="card food-card">
+            <span class="name food-name">2. Herbivore</span>
+            <span class="desc"><b>Japanese Vegetarian.</b> Sushi, Katsu & Ramen but 100% meat-free. Located in Fortune Centre.</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Herbivore+Vegetarian+Fortune+Centre+Singapore" target="_blank" class="btn food-btn">🍣 Eat Here</a>
+        </div>
+
+        <div class="card food-card">
+            <span class="name food-name">3. Loving Hut (Joo Chiat)</span>
+            <span class="desc"><b>Local Favorites.</b> Go here after Cat Socrates! Try the Vegan Laksa or Nasi Lemak.</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Loving+Hut+Joo+Chiat+Singapore" target="_blank" class="btn food-btn">🍜 Eat Here</a>
+        </div>
+
+        <div class="calculator">
+            <span class="calc-title">💰 Tax Refund Checker</span>
+            <input type="number" id="amount" placeholder="Enter Bill Amount ($SGD)">
+            <br>
+            <a href="#" onclick="checkRefund(); return false;" class="btn shop-btn" style="width: 100px; display: inline-block;">Check</a>
+            
+            <div id="result" class="result-box"></div>
+        </div>
+
+        <div class="footer">
+            Made with love (and code) <br> Safe travels! ✈️
+        </div>
+    </div>
+
+    <script>
+        function checkRefund() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            const resultDiv = document.getElementById('result');
+            
+            // Show the result box
+            resultDiv.style.display = "block";
+
+            if (isNaN(amount)) {
+                resultDiv.innerHTML = "<div class='fail-text'>Please enter a valid number!</div>";
+                return;
+            }
+
+            if (amount >= 100) {
+                // GST Calculation Logic
+                const estimatedRefund = amount * 0.055; 
+
+                resultDiv.innerHTML = `
+                    <div class='success-text'>✅ YAY! You qualify!</div>
+                    <div class='detail-text'>
+                        Est. Refund: <b>~$${estimatedRefund.toFixed(2)} SGD</b><br>
+                        <span style="color:#888; font-size:11px;">(This is cash back after admin fees!)</span>
+                    </div>
+                `;
+            } else {
+                const diff = (100 - amount).toFixed(2);
+                resultDiv.innerHTML = `
+                    <div class='fail-text'>❌ Almost there!</div>
+                    <div class='detail-text'>
+                        Spend <b>$${diff}</b> more to get money back!
+                    </div>
+                `;
+            }
+        }
+    </script>
+
+</body>
+</html>
